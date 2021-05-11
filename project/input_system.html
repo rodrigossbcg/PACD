@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>IEFP - Sistema de recomendação</title>
+
+        <style>
+            .down {
+                   transform: rotate(45deg);
+                   -webkit-transform: rotate(45deg);
+                   }
+
+            .arrow {
+                   border: solid green;
+                   border-width: 0 10px 10px 0;
+                   display: inline-block;
+                   padding: 15px;}
+
+            input[type=text], select {
+                  width: 100%;
+                  padding: 12px 20px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                }
+
+            input[type=submit] {
+                  width: 100%;
+                  background-color: #4CAF50;
+                  color: white;
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+
+            input[type=submit]:hover {
+                  background-color: #45a049;
+                }
+
+        </style>
+    </head>
+
+    <body>
+        <div style="border-bottom: solid 2px black;">
+            <img src="images/iefp.png" style="width: 100px;">
+        </div>
+
+        <img src="images/formações.png" style="width: 100%;">
+
+        <br>
+        <br>
+
+        <center><big><i class="arrow down"></i></big></center>
+
+        <br>
+        <br>
+
+        <div style="margin-right: auto; margin-left: auto; width: 70%">
+            <center><h1> Sistema de recomendação de formações</h1></center>
+            <br>
+            <center>
+                <h4><b>Queres encontrar as formações que mais se indentificam contigo?</b>
+                    orem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    , when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</h4>
+            </center>
+            <br>
+        </div>
+
+        <div style="margin-right: auto; margin-left: auto; padding: 15px;
+                    width: 70%; border-radius: 20px; background-color: #e6e6e6;">
+            <center><h2 style="color: green;"><b> Introduza as seguintes informações</b></h2></center>
+            <br>
+
+            <form action="/action_page.php" style="width: 60%; margin-left: auto; margin-right: auto;">
+
+                <h4 style="border-bottom: solid 3px green;">Informações utente:</h4>
+
+                <br>
+
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" name="idade" placeholder="Idade em número...">
+
+                <br>
+                <br>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="country">
+                  <option value="australia">Feminino</option>
+                  <option value="canada">Masculino</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="habilitacao">Habilitação:</label>
+                <select id="habilitacao" name="country">
+                  <option value="0">Não sabe Ler/Escrever</option>
+                  <option value="2">Ler/Escrever sem grau de ensino</option>
+                  <option value="4">4º ano</option>
+                  <option value="6">6º ano</option>
+                  <option value="9">9º ano</option>
+                  <option value="11">11º ano</option>
+                  <option value="12">12º ano</option>
+                  <option value="13">Pós secundário</option>
+                  <option value="14">Bacharelato</option>
+                  <option value="15">Licenciatura</option>
+                  <option value="17">Mestrado</option>
+                  <option value="20">Doutoramento</option>
+                </select>
+
+                <br>
+                <br>
+                <br>
+
+                <h4 style="border-bottom: solid 3px green;">Informações formação:</h4>
+
+                <br>
+
+                <label for="horas">Horas da formação:</label>
+                <input type="text" id="horas" name="lastname" placeholder="Duração da formação em horas..">
+
+                <br>
+                <br>
+
+                <label for="area_form">Area da formação:</label>
+                <select id="area_form" name="country">
+                  <option value="inf">Informática</option>
+                  <option value="hum">Humanidades</option>
+                  <option value="cie">Ciências</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="nivel">Nível de formação:</label>
+                <select id="nivel" name="country">
+                  <option value="0">Não sabe Ler/Escrever</option>
+                  <option value="2">Ler/Escrever sem grau de ensino</option>
+                  <option value="4">4º ano</option>
+                  <option value="6">6º ano</option>
+                  <option value="9">9º ano</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="saida">Saída profissional da formação:</label>
+                <select id="saida" name="country">
+                  <option value="0">Não sabe Ler/Escrever</option>
+                  <option value="2">Ler/Escrever sem grau de ensino</option>
+                  <option value="4">4º ano</option>
+                  <option value="6">6º ano</option>
+                  <option value="9">9º ano</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="categoria">Categoria da formação:</label>
+                <select id="categoria" name="country">
+                  <option value="0">Não sabe Ler/Escrever</option>
+                  <option value="2">Ler/Escrever sem grau de ensino</option>
+                  <option value="4">4º ano</option>
+                  <option value="6">6º ano</option>
+                  <option value="9">9º ano</option>
+                </select>
+
+                <input type="submit" value="Submit">
+
+            </form>
+            <br>
+        </div>
+
+    </body>
+</html>
